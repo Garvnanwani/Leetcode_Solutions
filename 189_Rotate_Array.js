@@ -1,3 +1,5 @@
 function rotate(nums, k) {
-    while(k-- > 0) nums.unshift(nums.pop());
+    for (let i = 0; i < k; i++) {
+        nums.unshift(nums.pop());
+    }
 };
